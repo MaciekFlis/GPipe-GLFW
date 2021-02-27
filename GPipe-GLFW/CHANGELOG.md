@@ -1,6 +1,24 @@
+### 2.0.0 -- UNRELEASED
+
+* Add `setWindowSizeCallback` so that it is no longer necessary to poll for
+  window size changes.
+* **Potentially breaking change:** Add `configEnableDebug :: Bool` field to the
+  `ContextHandlerParameters Handler`/`HandleConfig` data constructor.
+* Suppress debug logging by default. Turn it back on with
+  `defaultHandleConfig{configEnableDebug = True}` config.
+
+### 1.4.1.4
+
+* [sorki](https://github.com/sorki) bumped versions.
+* Reworked the nix integration.
+
+### 1.4.1.3
+
+* [MaciekFlis](https://github.com/MaciekFlis) bumped versions and resolver.
+
 ### 1.4.1.2
 
-* [Kludgy](https://github.com/LinuxUser404) bumped versions and resolver.
+* [Kludgy](https://github.com/Kludgy) bumped versions and resolver.
 * [LinuxUser404](https://github.com/LinuxUser404) bumped versions and added `cabal.project` & `.travis.yml`.
 * Set up travis builds with stack.
 
